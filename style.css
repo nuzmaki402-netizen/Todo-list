@@ -176,81 +176,60 @@ body {
 
 
 
+   
+
+
+
+
+
+
+
+
 @media (max-width: 480px) {
+
     .main-box {
-       flex-direction: column;
-       align-items: center;
-       gap: 20px;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
     }
 
     .box1,
     .box2 {
-        height: 35vh;
-        width: 90%;
-       
+        width: 100%;
+        min-height: 40vh;
+        max-height: 40vh;
     }
-.box2
-{
-    max-height: 50vh;
-    margin-bottom: 65px;
-    width: 348px;
-}
-#taskLisk{
-    max-height: 40vh;
-    overflow-y: auto;
-}
 
+    .box2 {
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
 
-.line1 {
-    margin-left: 14px;
-    width: 372px;
-    margin-bottom: 15px;
-}
+    #taskList {
+        max-height: 35vh;
+        overflow-y: auto;
+    }
 
-#heading{
-    margin-top: 10;
-}
+    .line,
+    .line1 {
+        width: 100%;
+    }
 
+    .box1 h1,
+    .box2 h1 {
+        text-align: center;
+        margin-left: 0;
+    }
 
-
-
-.box1 h1 {
-   
-    margin-left: 125px;
-}
-
-.line {
-    
-    width: 372px;
-    
-}
-
-.box1 p {
-    color: black;
-    margin-left: 30px;
-    margin-top: 26px
-}
-
-
-
-#add {
-    margin-top: 40px;
-        margin-left: 75px;
+    #add, 
+    #del {
+        margin: 20px auto;
+        display: block;
         padding: 6px 14px;
-   
-}
+    }
 
-#del {
-   margin-top: 40px;
-       margin-left: 22px;
-        padding: 6px 14px;
-}
-
-
-.box2 h1 {
-    
-    margin-left: 115px;
-   
-}
-
+    #heading {
+        margin-top: 20px;
+        text-align: center;
+    }
 }
