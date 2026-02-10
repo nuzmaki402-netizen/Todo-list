@@ -1,0 +1,256 @@
+body {
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    /* horizontal scroll off */
+
+}
+
+#heading {
+    display: flex;
+    justify-self: center;
+    color: #eee;
+    margin-top: 80px;
+}
+
+.line2 {
+    display: flex;
+    justify-self: center;
+    height: 4px;
+    width: 40vh;
+    background-color: #eee;
+
+}
+
+.main-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.box1 {
+    height: 45vh;
+    width: 40vh;
+    background-color: darkgray;
+    color: #fff;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.box1 h1 {
+    font-size: large;
+    color: black;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    margin-bottom: -1px;
+    padding: 2px;
+}
+
+.line {
+    height: 4px;
+    width: 40vh;
+    background-color: black;
+}
+
+.line1{
+     height: 4px;
+    width: 40vh;
+    background-color: black;
+   
+    
+}
+
+.box1 p {
+    color: black;
+    margin-left: 10px;
+    margin-top: 26px
+}
+
+#task {
+    padding: 3px 6px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+#time {
+    padding: 1px o;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+#date {
+    padding: 3px 6px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+#add {
+    margin-top: 20px;
+    margin-left: 30px;
+    padding: 3px 6px;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-right: 22px;
+    background-color: #667eea;
+    color: white;
+}
+
+#del {
+    padding: 3px 6px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: rgb(255, 0, 136);
+    color: white;
+}
+
+.box2 {
+    height: 45vh;
+    width: 40vh;
+    background-color: darkgray;
+    color: #fff;
+    border-radius: 10px;
+    border: 2px solid black;
+
+    position: sticky;
+    top: 20px;
+
+    overflow: hidden;
+    /*overflow-y: auto;  scroll on */
+    padding: 10px;
+    /*  overflow-x: hidden;  /* horizontal scroll off */
+
+
+}
+
+.box2 h1 {
+    font-size: large;
+    color: black;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    margin-bottom: -1px;
+    padding: 2px;
+
+}
+
+#msg {
+    color: green;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.7;
+}
+
+.task-num {
+    color: red;
+    font-weight: bold;
+}
+
+#taskList {
+    max-height: 35vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    padding: 0;
+    margin: 0;
+}
+
+#taskList li {
+    list-style: none;
+    margin-bottom: 8px;
+    background: #eee;
+    color: black;
+    padding: 6px;
+    border-radius: 5px;
+
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+
+
+
+@media (max-width: 480px) {
+    .main-box {
+       flex-direction: column;
+       align-items: center;
+       gap: 20px;
+    }
+
+    .box1,
+    .box2 {
+        height: 35vh;
+        width: 90%;
+       
+    }
+.box2
+{
+    max-height: 50vh;
+    margin-bottom: 65px;
+    width: 348px;
+}
+#taskLisk{
+    max-height: 40vh;
+    overflow-y: auto;
+}
+
+
+.line1 {
+    margin-left: 14px;
+    width: 372px;
+    margin-bottom: 15px;
+}
+
+#heading{
+    margin-top: 10;
+}
+
+
+
+
+.box1 h1 {
+   
+    margin-left: 125px;
+}
+
+.line {
+    
+    width: 372px;
+    
+}
+
+.box1 p {
+    color: black;
+    margin-left: 30px;
+    margin-top: 26px
+}
+
+
+
+#add {
+    margin-top: 40px;
+        margin-left: 75px;
+        padding: 6px 14px;
+   
+}
+
+#del {
+   margin-top: 40px;
+       margin-left: 22px;
+        padding: 6px 14px;
+}
+
+
+.box2 h1 {
+    
+    margin-left: 115px;
+   
+}
+
+}
