@@ -189,15 +189,15 @@ body {
 
     .main-box {
         flex-direction: column;
-        gap: 20px;
-        padding: 10px;
+        align-items: center;
+        gap: 15px;
+        margin-top: 40px;
     }
 
     .box1,
     .box2 {
-        width: 100%;
-        min-height: 40vh;
-        max-height: 40vh;
+        width: 90%;
+        height: 45vh;
     }
 
     .box2 {
@@ -206,13 +206,18 @@ body {
     }
 
     #taskList {
-        max-height: 35vh;
+        max-height: 32vh;
         overflow-y: auto;
     }
 
     .line,
     .line1 {
-        width: 100%;
+        width: 90%;
+    }
+
+    #heading {
+        margin-top: 30px;
+        text-align: center;
     }
 
     .box1 h1,
@@ -221,15 +226,11 @@ body {
         margin-left: 0;
     }
 
-    #add, 
-    #del {
-        margin: 20px auto;
-        display: block;
-        padding: 6px 14px;
+    #add {
+        margin-left: 50px;
     }
 
-    #heading {
-        margin-top: 20px;
-        text-align: center;
+    #del {
+        margin-left: 15px;
     }
-}
+    }
