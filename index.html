@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+    <h1 id="heading">Todo-list</h1>
+  <div class="line2"></div> </nav>
+    <div class="main-box">
+
+        <div class="box1">
+            <h1>
+                Fill Your Task
+            </h1>
+            <div class="line"></div>
+          <p> :- Task <input type="text" placeholder="Enter the task.." id="task"></p>
+           <p> :- Time <input type="time" placeholder="Enter the  time of task" id="time"></p>
+           <p> :- Date  <input type="date" placeholder="Enter the date of task" id="date"></p>
+
+            <button id="add">Add Task</button>
+            <button id="del">Remove Task</button>
+            <p id="msg"></p>
+        </div>
+
+
+        <div class="box2">
+  <h1>
+                Task-Gallary
+            </h1>
+            <div class="line1"></div>
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
