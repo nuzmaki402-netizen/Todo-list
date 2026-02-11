@@ -73,18 +73,22 @@ textspan.innerText=
     
     // Done Button
     let doneBtn = document.createElement("button");
+    doneBtn.className="donebtn";
+    
     doneBtn.innerText = "✔️";
 
     doneBtn.onclick = () => toggleTask(index);
 
     // Edit Button
     let editBtn = document.createElement("button");
+    editBtn.className="donebtn";
     editBtn.innerText = "✏️";
 
     editBtn.onclick = () => editTask(index);
 
     // Delete Button
     let delBtn = document.createElement("button");
+    delBtn.className="donebtn";
     delBtn.innerText = "❌";
 
     delBtn.onclick = () => deleteTask(index);
@@ -148,9 +152,3 @@ removeBtn.addEventListener("click", function () {
   tasks.pop(); // Last task delete
   saveAndUpdate();
 });
-
-msg.innerText = "✅ Task Added Successfully!";
-
-setTimeout(() => {
-  msg.innerText = "";
-}, 2000);
