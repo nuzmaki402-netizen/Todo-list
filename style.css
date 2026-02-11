@@ -74,11 +74,16 @@ body {
     border-radius: 5px;
     border: 2px solid black;
 }
-
+#task:hover{
+    transform: translateY(-3px);
+}
 #time {
     padding: 1px o;
     border-radius: 5px;
     border: 2px solid black;
+}
+#time:hover{
+    transform: translateY(-3px);
 }
 
 #date {
@@ -86,7 +91,9 @@ body {
     border-radius: 5px;
     border: 2px solid black;
 }
-
+#date:hover{
+    transform: translateY(-3px);
+}
 #add {
     margin-top: 20px;
     margin-left: 30px;
@@ -97,7 +104,9 @@ body {
     background-color: #667eea;
     color: white;
 }
-
+#add:hover{
+    transform: translateY(-5px);
+}
 #del {
     padding: 3px 6px;
     border-radius: 5px;
@@ -105,7 +114,9 @@ body {
     background-color: rgb(255, 0, 136);
     color: white;
 }
-
+#del:hover{
+    transform: translateY(-5px);
+}
 .box2 {
     height: 45vh;
     width: 40vh;
@@ -135,11 +146,6 @@ body {
 
 }
 
-#msg {
-    color: green;
-    font-size: 14px;
-    margin-left: 10px;
-}
 
 .completed {
     text-decoration: line-through;
@@ -173,16 +179,9 @@ body {
     overflow-wrap: break-word;
 }
 
-
-
-
-   
-
-
-
-
-
-
+.donebtn:hover{
+transform: translateY(-3px);
+}
 
 
 @media (max-width: 480px) {
@@ -205,6 +204,7 @@ body {
 
     .box2 {
         margin-bottom: 50px;
+        width: 88%;
     }
 
     #taskLisk {
@@ -253,3 +253,7 @@ body {
     }
 
 }
+
+
+
+    
