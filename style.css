@@ -190,47 +190,66 @@ body {
     .main-box {
         flex-direction: column;
         align-items: center;
-        gap: 15px;
-        margin-top: 40px;
+        gap: 20px;
+        width: 100%;
+        padding: 10px;
     }
 
     .box1,
     .box2 {
-        width: 90%;
-        height: 45vh;
+        width: 100%;
+        max-width: 95%;
+        height: auto;
+        min-height: 35vh;
     }
 
     .box2 {
+        margin-bottom: 50px;
+    }
+
+    #taskLisk {
+        max-height: 40vh;
         overflow-y: auto;
-        overflow-x: hidden;
     }
 
-    #taskList {
-        max-height: 32vh;
-        overflow-y: auto;
-    }
-
-    .line,
-    .line1 {
-        width: 90%;
-    }
-
-    #heading {
-        margin-top: 30px;
-        text-align: center;
-    }
-
+    /* Headings center */
     .box1 h1,
     .box2 h1 {
         text-align: center;
-        margin-left: 0;
+        margin: 10px 0;
     }
 
-    #add {
-        margin-left: 50px;
+    #heading {
+        margin-top: 10px;
+        text-align: center;
     }
 
+    /* Lines full width */
+    .line,
+    .line1 {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Paragraph */
+    .box1 p {
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    /* Buttons center */
+    .btn-box {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 25px;
+        flex-wrap: wrap;
+    }
+
+    #add,
     #del {
-        margin-left: 15px;
+        margin: 0;
+        padding: 6px 16px;
     }
-    }
+
+}
