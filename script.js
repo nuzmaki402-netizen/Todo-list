@@ -1,4 +1,4 @@
-       // Elements
+// Elements
 const inputBox = document.getElementById("task");
 const timeBox = document.getElementById("time");
 const dateBox = document.getElementById("date");
@@ -153,86 +153,4 @@ removeBtn.addEventListener("click", function () {
   saveAndUpdate();
 });
 
-// Todo App
-
-let todos = [];
-
-function addTodo() {
-  let text = document.getElementById("todoText").value;
-  let date = document.getElementById("todoDate").value;
-  let time = document.getElementById("todoTime").value;
-
-  if (!text || !date || !time) {
-    alert("Fill all fields!");
-    return;
-  }
-
-  let todo = {
-    id: Date.now(),
-    text,
-    date,
-    time,
-    done: false
-  };
-
-  todos.push(todo);
-  saveTodos();
-  renderTodos();
-
-  document.getElementById("todoText").value = "";
-  document.getElementById("todoDate").value = "";
-  document.getElementById("todoTime").value = "";
-}
-
-function renderTodos() {
-  let list = document.getElementById("todoList");
-  list.innerHTML = "";
-
-  todos.forEach(todo => {
-    let li = document.createElement("li");
-
-    li.innerHTML = `
-      <span style="${todo.done ? 'text-decoration:line-through;opacity:0.6' : ''}">
-        ${todo.text} (${todo.date} ${todo.time})
-      </span>
-
-      <div class="todo-actions">
-        <button onclick="toggleTodo(${todo.id})">✔</button>
-        <button onclick="deleteTodo(${todo.id})">❌</button>
-      </div>
-    `;
-
-    list.appendChild(li);
-  });
-}
-
-function toggleTodo(id) {
-  todos = todos.map(t =>
-    t.id === id ? { ...t, done: !t.done } : t
-  );
-
-  saveTodos();
-  renderTodos();
-}
-
-function deleteTodo(id) {
-  todos = todos.filter(t => t.id !== id);
-
-  saveTodos();
-  renderTodos();
-}
-
-function saveTodos() {
-  localStorage.setItem("myTodos", JSON.stringify(todos));
-}
-
-function loadTodos() {
-  let data = localStorage.getItem("myTodos");
-
-  if (data) {
-    todos = JSON.parse(data);
-    renderTodos();
-  }
-}
-
-loadTodos();
+         
