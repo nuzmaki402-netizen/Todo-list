@@ -19,6 +19,13 @@ class TodoApp {
         const filterBtns = document.querySelectorAll('.filter-btn');
 
         addBtn.addEventListener('click', () => this.addTask());
+tasktime.addEventListener('keypress', (e)=>{
+     if (e.key === 'Enter') this.addTask();
+})
+
+        taskdate.addEventListener('keypress', (e) =>{
+             if (e.key === 'Enter') this.addTask();
+        });
         taskInput.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') this.addTask();
         });
