@@ -47,8 +47,7 @@ class TodoApp {
 
             this.tasks.unshift(task);
             this.saveToStorage();
-            this.render();
-            this.updateStats();
+            this.render();            this.updateStats();
             
             // Animation feedback
             input.value = '';
@@ -97,8 +96,7 @@ class TodoApp {
     }
 
     getFilteredTasks() {
-        switch (this.currentFilter) {
-            case 'active':
+        switch (this.currentFilter) {            case 'active':
                 return this.tasks.filter(task => !task.completed);
             case 'completed':
                 return this.tasks.filter(task => task.completed);
@@ -147,7 +145,6 @@ class TodoApp {
         document.getElementById('total-count').textContent = total;
         document.getElementById('completed-count').textContent = completed;
     }
-
     clearCompleted() {
         if (!confirm('Are you sure you want to clear all completed tasks?')) return;
         
@@ -197,8 +194,7 @@ class TodoApp {
         
         setTimeout(() => {
             errorDiv.remove();
-        }, 3000);
-    }
+        }, 3000);    }
 }
 
 // Initialize the app when DOM is loaded
@@ -217,3 +213,4 @@ document.addEventListener('click', (e) => {
         }
     }
 });
+
